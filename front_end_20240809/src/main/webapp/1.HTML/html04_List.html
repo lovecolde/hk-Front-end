@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>HTML04_목록 요소</title>
+
+<style type = "text/css">
+/* li요소의 자식요소들 중에 ul요소를 선택
+display (none) -> 안보이게 하는 속성 (동적으로 처리하는 기능)
+*/
+		li > ul{display: none;}
+		ul > li{list-style: none;}
+		b{cursor: pointer;}
+</style>
+
+	<script type="text/javascript">
+		window.onload=function(){
+			document.querySelectorAll("b")[0].onclick=function(){
+				document.querySelectorAll("li>ul")[0].style.display="block";
+			}
+		}
+	</script>
+<style>
+</style>
+
+</head>
+<body>
+	<h1> 1. 비순차적 목록 요소 </h1>
+	<!--  ul로 먼저 틀을 만들고 li로 값을 넣는 형태이다. ul 안에 li (목록)태그가 들어감 -->
+	<ul>
+		<li> <b>Java</b> 
+			<ul>
+				<li> 변수의 사용</li>
+				<li> 객체 지향</li>
+				<li> 상속과 은닉화</li>
+				<li> 다형성</li>
+			</ul>
+		</li>	
+		
+		<li> <b>Database</b> 
+			<ul>
+				<li> 환경설정 </li>
+				<li> DB모델링 개념</li>
+				<li> DML/DDL/DCL</li>
+				<li> 테이블, 뷰, 프로시저</li>
+			</ul>
+		</li>
+		<li> <b>HTML</b> </li>	
+		<li> <b>CSS</b> </li>
+	</ul>
+	
+	
+	<h1> 2. 순차적 목록 요소 </h1>
+	<!--  ol로 먼저 틀을 만들고 li로 값을 넣는 형태이다. ol 안에 li (목록)태그가 들어감 -->
+	<ol>
+		<li> <b>Java</b> 
+			<ol>
+				<li> 변수의 사용</li>
+				<li> 객체 지향</li>
+				<li> 상속과 은닉화</li>
+				<li> 다형성</li>
+			</ol>
+		</li>	
+		
+		<li> <b>Database</b>
+			<ol>
+				<li> 환경설정 </li>
+				<li> DB모델링 개념</li>
+				<li> DML/DDL/DCL</li>
+				<li> 테이블, 뷰, 프로시저</li>
+			</ol>
+		</li>
+		
+		<li> <b>HTML</b> </li>	
+		<li> <b>CSS</b> </li>
+	</ol>
+	
+	
+	
+</body>
+</html>

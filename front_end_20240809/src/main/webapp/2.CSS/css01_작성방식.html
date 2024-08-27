@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CSS01_작성방식</title>
+<link rel="stylesheet" href="2.CSS/Test_0.css">
+<!-- 경로 : ./url ->앞에 작성을 안하거나 ./를 붙이면 현재위치부터 찾는다. 
+		    / 만 붙이면 root부터 찾는다(최상위 경로부터 탐색)  -->
+		    
+<style type="text/css">
+	@import url("2.CSS/Test_0.css");
+   body{
+      margin: 0px;	/* 외부여백 */
+   }
+   
+   p{
+      color:salmon;
+   }
+   
+   strong{
+      color:pink;
+   }
+</style>
+</head>
+
+<body>
+<p style="color:white; background-color:brown;">in-line방식</p>
+<strong>요소 내부에 작성한다.</strong>
+<p>내부스타일방식</p>
+<strong>head태그 내부에 style태그로 작성하는 방식</strong>
+
+<p> 외부 스타일 방식 </p>
+<strong>  외부 CSS 파일을 만들어 작성하는 방식 </strong>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>HTML01_구성요소</title>
+
+</head>
+<body>
+	<h1> HTML 파일 실행해보기 </h1>
+	<h1> Hello HTML !! </h1>
+	
+	<p> 01 중첩된 요소가 있을 때는<strong> 바르게 </strong>표현해야 한다.</p>
+	<P> 02 요소나 속성들은 소문자로 표현 </P>
+	<p><a href=“index.html”>첫페이지</a></p> 
+	<p><A href='“index.html”'>첫페이지</A></p> 
+	
+	<P> 03 속성값에는 인용 부호를 붙여야 한다. </P>
+	<a href=“index.html”>첫페이지</a>
+	<a href=“index.html”>첫페이지</a>
+	
+	<P> 04 속성은 속성 값과 함께 써야 한다. </P>
+	<input type="text"/>			<!-- 속성 = "속성 값" -->
+	<input type="text" disabled="disabled"/>
+	
+	<select>
+		<option> 선택목록 1 </option>
+		<option selected> 선택목록 2 </option>
+	</select>
+	
+	<P> 05 Img와 area 요소에는 alt 속성이 있어야 한다. </P>
+	<img src = "images/today.gif" alt = "오늘"/>
+	
+	<p> 06 특수문자를 쓸 때는 Entity Name 또는 Entity code 를 사용해야 한다. </p> 
+	<!-- 브라우저가 부등호 및 특수기호를 태그로 인식할 수 있기 때문에 주의를 요한다. -->
+	<h1> Entity Code </h1>
+	<p> 5 &lt; 10</p>
+	
+	<!-- 07 주석처리하기 (Ctrl + Shift + C) -->
+	<!-- 	주석은 실제 브라우저에 적용되지 않는다. -->
+	<!-- 	Java Script의 주석은 // 이다.  -->
+	<!-- 	CSS 의 주석은 /* */ 이다. (Ctrl + Shift + C로 지우기 불가능) -->
+	
+	<P> 08 META 데이터</P>
+	<!-- <meta charset = "UTF-8"
+	<title>HTML 구성요소 </title>
+	<style> type = "text/css">
+		p {color : red;}
+		</style> -->
+</body>
+</html>

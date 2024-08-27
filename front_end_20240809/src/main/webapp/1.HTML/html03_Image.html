@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>html03_Image.html</title>
+</head>
+<body>
+	<h1> 1. 이미지 요소 </h1>
+	<p> 이미지를 웹 페이지에 표현할 때 사용한다. </p>
+	<p> 사이즈 조절을 할때 해상도를 고려해야 한다. </p>
+	
+	<p> 01 이미지 링크로 넣는 방식 (이미지 주소 복사)
+	<img alt="리바이❤️💕"src="https://i.pinimg.com/564x/ea/42/5a/ea425a7cdaf4dafc438931ecf6fe40fb.jpg">
+	<!--  링크를 통해서 하는 것은 네트워크 상황이 안좋다면 느려진다. -->
+	
+	<p> 02 이미지가 있는 링크로 이동하는 방식 (사이트 주소 복사) , a 태그 이용한다.</p>
+	<a href="https://kr.pinterest.com/pin/338684834496635615/">
+	<img alt="지크를 드디어 죽인 리바이" >
+	</a>
+	<!-- a 태그는 인라인 요소를 감싸고 있다. -->
+	
+	<p> 03 이미지 폴더에서 가져오는 방식 (해상도를 조절한다.)</p>
+	<img alt="제 남자친구 입니다" src="img/skuna.jpg"
+							  width="900"
+							  height="550">
+							  
+	<h1> 2. 이미지 맵 사용하기 </h1>
+	<img usemap="#menu" alt="카페 메뉴입니다." src="img/menu1.jpg"/>
+	<map name= "menu">
+	<area alt="커피 입니다."
+		  href="https://youtu.be/FKsT8HaiYNA?feature=shared"
+		  shape="rect"
+		  coords="103,93,193,235"
+		  target="_blank"
+		  /> 
+	</map>
+	
+	<h1> 3.링크를 이용하여 페이지 이동하기. </h1>
+	<hr/>
+	<a target="tt" 
+	   href="html01_구성요소.html"> 이동 </a>
+	 <br/>
+	<iframe name="tt"
+			src="html02_블록요소-인라인요소.html"
+			style="width:400px; height:400px;">
+	</iframe><iframe name="tt"
+			src="html02_블록요소-인라인요소.html"
+			style="width:400px; height:400px;">
+	</iframe>
+	
+	
+	
+</body>
+</html>

@@ -1,2 +1,2 @@
-hk-frontend \n
+hk-frontend
 HTML CSS JavaScript

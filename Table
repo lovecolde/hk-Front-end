@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8"> 
+<title> HTML Table workspace </title>
+</head>
+
+<body>
+
+    <h1> 1. 테이블 </h1>
+    <h2> 표를 작성하는 요소 </h2>
+    <ul>
+        <li> <strong> cell : </strong> 표 안의 항목 </li>
+        <li> <strong> row : </strong> 횡렬의 셀 (가로) </li>
+        <li> <strong> column : </strong> 종렬의 셀 (세로) </li>
+    </ul>
+
+    <h2> 주요 구성 태그 </h2>
+    <h3> tr th td  thread tbody tfoot  caption col </h3>
+    <ul>
+        <li> <strong> tr : </strong> 행을 정의하는 태그 (th, td만 자식요소로 포함) </li>
+        <li> <strong> th : </strong> 제목 셀 정의 (굵게 중앙 정렬) </li>
+        <li> <strong> td : </strong> 데이터 셀 정의 </li>
+        <li> <strong> Tread : </strong> 테이블의 머리글 </li>
+        <li> <strong> Tbody : </strong> 테이블의 본문 </li>
+        <li> <strong> tfoot  : </strong> 테이블의 바닥글</li>
+        <li> <strong> caption : </strong> 테이블(표) 제목 table 태그 바로 밑에 작성 </li>
+        <li> <strong> Col : </strong> 테이블에 열을 정의 (너비 설정시 사용) </li>
+        <li> <strong> colgroup : </strong> 테이블 열 그룹화 </li>
+    </ul>
+
+    <h2> 주요 속성 </h2>
+    <ul>
+        <li> <strong> rowspan : </strong> 수직방향으로 셀 결합 </li>
+        <li> <strong> colspan : </strong> 수평방향으로 셀 결합 </li>
+    </ul>
+
+    <!-- 테이블 만들어보기 -->
+     <table bolder>
+        <tr>
+            <td> 가 </td>
+            <td> 가 </td>
+            <td> 가 </td>
+            <td> 가 </td>
+            <td> 가 </td>
+        </tr>
+
+     </table>
+</body>
+
+</html>

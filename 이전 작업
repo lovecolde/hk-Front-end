@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"> <!-- meta: 인코딩정의 -->
+<title> HTML-workspace </title>
+<!-- <head> : meta, title, link, script, style 작성
+    <script> : JSP 정의 
+    <style>  : CSS 정의 
+    <link>   : 외부 CSS 파일 연결할 때 정의 -->
+</head>
+
+<body> <!-- 브라우저에 표현되는 내용 정의 -->
+<!-- 제목 : h -->
+   <h1> h1 : 제목 (한 문서에 한 번만 지정 권장)</h1>
+   <h2> (h2) h 태그 : CSS로 임의의 크기 지정 가능 </h2>
+   <h3> h3 </h3>
+   <h4> h4 </h4>
+   <h5> h5 </h5>
+   <h6> h6 </h6>
+
+<!-- 단락 : p / 문단 간격 정의 : br(종료태그X) 
+    강조 : strong / 이태릭 : em -->
+   <p> p : 문서 내에 단락을 정의하는 태그이다. (블록요소)</p>
+   <p> 다른 블록요소를 포함할 수 없다. </p>
+   <p> 인라인 요소 + 텍스트 요소 포함할 수 있는 <strong> 블록요소</strong>
+      이지만, <br/> 또 다른 <em>블록요소</em> 를 포함할 수 없다. </p>
+<!-- br요소를 여러번 사용하여 행의 간격을 늘일 수 있으나 시각적 효과를 위해 사용 X -->
+   <hr/> 
+<!-- 주소 : address  -->
+   <p> <strong>adress : </strong>문서의 연락처 정보를 나타내는 요소 (블록요소 포함 X)</p>
+   <p> <strong> p 요소의 경우 DTD가 'Transitional'로 선언되어있으면 포함</strong> </p>
+   
+   <address> 연락처 : 02-1111-3333 </address>
+   <address> <a href="#"> 이메일 : ji_min_park@naver.com </a></address>
+   <hr/>
+
+<!-- 인용문 : blockquote , cite, q  -->
+   <p> <strong> blockquote : 다른 사이트에서 인용한 일부 지정시 사용</strong>
+   <br/> <strong>p</strong> 요소를 사용한다. </p>
+   
+   <p> <strong>cite : 인용문의 출처를 표시 (작품의 제목 등을 나타낼때 사용) </strong>
+      <br/> (화면에는 표시되지 않으나, 검색엔진이 주소를 사용할 수 있음)</p>
+      
+   <p> <strong> q : 짧은 인용문을 지정할 때 사용 (텍스트, 인라인 요소 포함)</strong></p>
+   <hr/>
+<!-- 인용문의 예시 
+   <blockquote cite=“URL”>
+    <p>인용문</p>
+    <cite>인용문 제목</cite>
+   </blockquote> 
+ -->   
+ 
+ <!-- 텍스트 : b / em / i / small / strong / 
+          sub / sup / ins / del  -->
+    <h3> 텍스트 요소 </h3>
+    <b> b 태그 : 텍스트를 진하게 표시 </b> <br/>
+    <em>em 태그: 텍스트 강조 (기울임 꼴 표시)</em> <br/>
+    <i> i 태그 : 텍스트 강조 (기울임 꼴 표시)</i>   <br/>
+    <small> small 태그 : 작은 텍스트 표시, 코멘트 용도 </small> <br/>
+    <strong> strong 태그 : 텍스트를 진하게 표시 </strong> <br/>
+    <sub> sub 태그 : 아래 첨자 용도로 사용 </sub> <br/>
+   <sup> sup 태그 : 윗 첨자 용도로 사용 </sup> <br/>
+   <ins> ins 태그 : del요소와 반대로 내용을 추가할 때 사용 </ins> <br/>
+   <del> del 태그 : ins요소와 반대로 삭제된 텍스트가 있을 때 사용 </del>
+   <hr/>
+
+<!-- 이미지 : 인라인, 빈요소 (단일태그)
+          alt : 이미지 설명 내용 지정 
+                이미지가 주변환경에 의해 보이지 않을 경우 alt속성에서 정의한 내용이 표현
+          width, height : 이미지의 가로,세로 크기 지정
+          src : 삽입하려는 이미지의 경로 지정  
+   <img src="image.jpg" alt="이미지 설명" width="100px" height"100"/> -->
+<img alt="리바이 입니다." 
+src="https://i.pinimg.com/564x/b9/e9/cc/b9e9cc7bdf366a5966f45ad8f808cda5.jpg"
+width="350px"
+height="350px"> <br/>
+
+<p> 이미지 map : 이미지 일부 영역에 링크를 두어 해당 페이지로 이동
+<br/>         html03_Image 참고 </p>
+<!-- 이미지 map : 이미지의 일부 영역에 링크를 두어 해당 페이지로 이동할 수 있는 기법 
+             블록요소
+             name, id 속성
+             img 요소의 usemap 속성값 지정 -> 해당 이미지와 연결시킴  -->
+<!-- area : 이미지 일부 영역에 링크를 두어 해당 페이지로 이동할 수 있는 기법 
+         href 속성 : URL 지정
+         alt 속성 : 대체 text 지정
+         shape 속성 : 영역 지정 (default, rect, circle, poly)
+         coods : 영역의 좌표를 나타내면 왼쪽 위가 기준점임 -->
+<hr/>
+<!--  링크 : a 태그 (텍스트나 이미지를 통해 다른 페이지로 연결해주는 역할) -->
+   <p> <strong>a 태그 :</strong> 텍스트에 링크를 설정하는 요소 (인라인 요소)</p>
+<hr/>
+
+<!-- 리스트 : ul /ol / li  
+         >> 목록을 정의할 때 쓰이는 요소 (메뉴 작성시 사용) -->
+   <p> <strong> ul 태그 : </strong> 비순차적 목록 나열 </p> 
+   <p> <strong> ol 태그 : </strong> 순차적 목록 나열 (넘버링) </p>
+   <p> <strong> li 태그 : </strong> 목록의 내용 표시 </p> 
+   
+<!-- 비순차형과 순차형 리스트  -->
+    <ul> ul 태그 리스트 
+        <li> Java </li>
+        <li> Database </li>
+        <li> JSP </li>
+        <li> HTML </li>
+    </ul>
+
+    <ol> ol 태그 리스트 
+        <li> Java </li>
+        <li> Database </li>
+        <li> JSP </li>
+        <li> HTML </li>
+    </ol>
+
+<!-- 리스트 : dl / dt / dd  
+         >> 정의형 목록 구성   -->
+   <p> <strong> dl 태그 : </strong> 정의형 목록 나열 </p>
+   <p> <strong> dt 태그 : </strong> 정의형 목록 작성 </p>
+   <p> <strong> dd 태그 : </strong> 정의형 목록 하위 내용 작성 </p>
+
+   <dl> dl (목록 나열)
+        <dt> 웹과정 (목록 작성) </dt>
+        <dd> dd (하위목록) </dd>
+        <dd> Java </dd>
+        <dd> Database </dd>
+        <dd> JSP </dd>
+        <dd> HTML </dd>
+   </dl>
+
+<hr/>
+
+</body>
+</html>

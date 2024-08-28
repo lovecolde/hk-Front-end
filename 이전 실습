@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"> <!-- meta: 인코딩정의 -->
+<title> HTML 실습 1 </title>
+</head>
+
+<body>
+
+    <h1> Lorem Ipsum </h1>
+    <cite> " Neque porro .... " </cite> </br>
+    <hr/>
+    
+    <ul>
+        <li> --- </li>
+        <li> --- </li>
+        <li> --- </li>
+        <li> --- </li>
+        </br>
+
+        <li> --- </li>
+        <li> --- </li>
+        <li> --- </li>
+        <li> --- </li>
+    </ul>
+
+    <p> Generated.... of <a href="#"> Lorem Ipsum </a> </p>
+    <hr/>
+
+    <address> help@lipsum.com</address>
+
+</body>
+
+</html>

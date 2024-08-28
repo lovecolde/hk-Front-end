@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title> HTML Form </title>
+</head>
+<body>
+    <h1> Form 요소 </h1>
+    <h4> 폼의 최상위 요소 : 폼을 구성할 때 정의 </h4>
+
+    <h2> 1. Form 요소 주요 속성 </h2>
+    <ul>
+        <li> <strong> action :</strong> 폼 서식에서 작성한 값들을 처리할 서버 프로그램 주소 </li>
+        <li> <strong> method :</strong> 작성된 값들을 처리할 서버 프로그램 주소 </li>
+        <ul>
+            <li> .get : 전송값이 노출되고 (url에서 확인가능), 전송 데이터 양 적음 </li>
+            <li> .Post : 전송값이 노출되지 않고, get 방식에 비해 많은 양의 데이터 전송 가능. </li>
+        </ul>
+    </ul>
+
+    <form action="index.jsp" method="post">
+        <input type="text" name=" " value=" "/>
+    </form>
+    <a href="index.JSP?q한j2fjq0f332np=css"> 전송 </a>
+
+    <h2> 2. Fieldset </h2>
+    <p> 여러 폼 요소 그룹화할 때 정의 (legend 요소로 그룹의 제목을 표시) </p>
+    <!-- Fieldset 요소 -->
+     <fieldset>
+        <legend> 그룹의 제목</legend>
+        <input type="text" name="user" value="hk"/>
+    </fieldset>
+
+    <h2> 3. Input </h2>
+    <p> 폼 안에 기본적인 컨트롤 생성 </p>
+    <ul> Input요소의 Type
+        <li> <strong> text : </strong> 일반 텍스트 입력 필드 </li>
+        <li> <strong> password : </strong> 비밀번호 입력필드 (입력한 텍스트 '***' 표시) (일반텍스트로 전송되므로 암호화 필)</li>
+        <li> <strong> checkbox : </strong> 체크박스 표시필드 (중복체크 (O)) </li>
+        <li> <strong> radio : </strong> 라디오 버튼 표시필드 (중복체크 (X)) </li>
+        <li> <strong> submit : </strong> 송신 버튼 </li>
+        <li> <strong> reset : </strong> 리셋버튼 -> 폼 안에 입력요소 초기화</li>
+        <li> <strong> button : </strong> 버튼형식 제공 </li>
+        <li> <strong> image : </strong> 송신 이미지 버튼 (src 속성, alt 속성 지정) </li>
+        <li> <strong> file : </strong> 송신파일 선택 필드 </li>
+        <li> <strong> hidden : </strong> 브라우저에 필드를 감춰 표현 * 화면에는 미표시, 기능은 정상작동 </li>
+    </br>
+        <li> <strong> name : </strong> 컨트롤의 name 설정 (서버와의 DT처리 작업시, name 속성 사용하기 때문에 필수 </li>
+        <li> <strong> value : </strong> 컨트롤 값 </li>
+        <li> <strong> size : </strong> text, password 컨트롤 가로 크기 설정 </li>
+        <li> <strong> maxlength : </strong> text, password 컨트롤의 최대 입력 문자수 지정 </li>
+        <li> <strong> checked : </strong> 체크박스, 라디오 버튼 초기 선택상태 지정 </li>
+        <li> <strong> disabled : </strong> 컨트롤 포커스, 선택, 변경 등의 조작 불가능하도록 비활성화 / 데이터 전송도 안됨 </li>
+        <li> <strong> readonly : </strong> 컨트롤의 입력 내용이 변경되지 않도록 함. 데이터는 서버로 전송 가능 </li>
+    </ul>
+
+    <h2> 4. textarea 요소 </h2>
+    <p> 여러 줄로 선택된 텍스트 필드 생성하는 인라인요소 </p>
+    <ul> textarea 주요 속성 
+        <li> <strong> name disabled readonly : </strong> input 요소 설명과 동일 </li>
+        <li> <strong> Rows : 표시 줄 수 지정 </strong> (입력 가능한 줄 수 제한 X, 브라우저에 보이는 줄 수 의미 ) </li>
+        <li> <strong> Cols : 표시 폭 문자수로 지정 </strong>(브라우저의 설정에 따라 차이 있을 수 있음) </li>
+    </ul>
+
+    <h2> 5. selection / option 요소 </h2>
+    <p> Selection 요소의 주요 속성 </p>
+    <ul>
+        <li> <strong> name : </strong> select 메뉴 이름 지정 </li>
+        <li> <strong> Size : </strong> 선택 목록 줄 수 지정 (size를 ㅈ넘는 항목은 스크롤 바로 제공) </li>
+    </ul>
+    <P> Option 요소의 주요 속성 </P>
+    <ul>
+        <li><strong> selected : </strong> 해당 option요소가 초기 선택되도록 하며 , 설정이 안되어 있으면 첫번째 요소가 기본 </li>
+        <li><strong> value : </strong> 선택된 목록 값 </li>
+    </ul>
+
+    <!-- Selection / Option -->
+     <select name="sel">
+        <option value="list01"> list 01 </option>
+        <option value="list02"> list 02 </option>
+     </select>
+
+    <h2> 6. 버튼 요소 </h2>
+    <p> input의 버튼생성과 기능적으로 같으나, 이미지/ 텍스트를 포함할 수 있어 유연함 </p>
+    <p> 버튼 요소는 <strong> type을 정의하지 않으면 input의 'submit'과 동일한 기능 </strong> 하기 때문에 반드시 정의 (브라우저마다 다름) </p>
+    <p> <strong> Button 요소의 주요 속성 </strong></p>
+    <ul>
+        <li> <strong> Submit : </strong> 송신 버튼 </li>
+        <li> <strong> Reset : </strong> 리셋 버튼 </li>
+        <li> <strong> Button : </strong> 범용 버튼 </li>
+    </ul>
+
+    <!-- Button -->
+     <button type="button"> <img src="" alt=""/> </button>
+     <button type="reset"> 초기화 </button>
+    
+    <h2> 7. Label 요소 </h2>
+    <p> 컨트롤에 라벨을 정의할 때 사용되는 요소 </p>
+    <p><strong> label 요소의 주요 속성 </strong></p>
+    <ul>
+        <li> <strong> for : 라벨 정의하려는 요소와 동기화 하기 위한 속성 / 동기화 대상 컨트롤 id속성 값과 일치 </strong></li>
+        <li> 명시적 라벨 </li>
+            <ul>
+                <li> label요소에 for 속성과 컨트롤의 id 속성을 일치시켜 지정 </li>
+                <li> 컨트롤 하나에 여러 개의 라벨 정의 가능 </li>
+                <li> Label 요소와 컨트롤 요소 간 반드시 인접할 필요 X </li>
+            </ul>
+        <li> 암묵적 라벨 </li>
+            <ul>
+                <li> Label 요소 범위 안에 텍스트/ 컨트롤 요소 포함하여 정의 </li>
+                <li> 하나의 컨트롤에 여러 라벨 정의 불가능 </li>
+                <li> 텍스트, 컨트롤은 반드시 라벨 안에 정의되어 있어야 함 </li>
+            </ul>
+    </ul>
+</body>
+</html>
